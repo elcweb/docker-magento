@@ -41,5 +41,5 @@ ENV SMTP_USER null
 ENV SMTP_PASSWORD null
 
 ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
 

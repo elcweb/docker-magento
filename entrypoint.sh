@@ -16,5 +16,5 @@ if [ "$SMTP_ENABLE" -eq "1" ]; then
 fi
 
 ### Start Original command
-exec "$@"
+exec "apache2-foreground"
 
