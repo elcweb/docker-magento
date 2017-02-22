@@ -39,6 +39,7 @@ ENV SMTP_MYHOSTNAME localhost
 ENV SMTP_HOST null
 ENV SMTP_USER null
 ENV SMTP_PASSWORD null
+RUN echo 'sendmail_path="/usr/sbin/sendmail -t -i"' >> /usr/local/etc/php/php.ini
 
 ADD entrypoint.sh /entrypoint.sh
 #ENTRYPOINT ["/entrypoint.sh"]
